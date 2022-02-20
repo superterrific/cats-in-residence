@@ -1,5 +1,6 @@
 ---
 title: 'The Cats-in-Residence Program'
+summary: "A collaborative purr-formance piece by Rhonda Lieberman"
 pageTitle: 'Meow...'
 subtitle: "Would you like more rescue cats with your Art?"
 exhibitionText: "The Cats-in-Residence Program traveled to four venues between 2013 and 2016."
