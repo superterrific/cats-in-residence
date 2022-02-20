@@ -1,0 +1,19 @@
+{% for item in exhibitions.items %}
+<div class="card card-exhibition">
+
+  <picture>
+    <source srcset="/img/{{ item.img }}.avif" type="image/avif">
+    <source srcset="/img/{{ item.img }}.webp" type="image/webp">
+    <img src="/img/{{ item.img }}.jpg" width="700" height="450" alt="{{ item.alt }}" loading="lazy">
+  </picture>
+  <p class="photo-credit">Photo<span class="visually-hidden"> credit</span>: {{ item.credit }}</p>
+
+  <div class="card-content">
+    <h3>
+      <span class="visually-hidden">Link to</span> <a href="/exhibitions/{{ item.venue | slug }}/">{{ item.venue }}</a>
+    </h3>
+    <p>{{ item.date }}</p>
+    <p class="card-exhibition-count">{{ item.adoptions }} adoptions</p>
+  </div>
+</div>
+{% endfor %}

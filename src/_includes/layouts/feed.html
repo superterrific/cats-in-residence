@@ -1,0 +1,33 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/tokens.css" %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+{% endset %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% set postListItems = pagination.items %}
+
+      {% block content %}
+      <div class="wrapper wrapper-content flow">
+        <h1>{{ pageHeaderTitle }}</h1>
+        <div class="flow exhibition-feed">
+          {% for item in postListItems %}
+          <article>
+            <h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+            <p>
+              {{ item.data.location | safe }}
+            </p>
+            <p>
+              <time datetime="{{ item.data.startDate | w3Date }}">{{ item.data.startDate | longDate }}</time> - <time datetime="{{ item.data.endDate | w3Date }}">{{ item.data.endDate | longDate }}</time>
+            </p>
+          </article>
+          {% endfor %}
+        </div>
+        {% if not tag %}
+          {% include "partials/pagination.html" %}
+        {% endif %}
+      </div>
+      {% endblock %}

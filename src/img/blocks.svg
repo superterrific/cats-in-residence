@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900px" height="50px" viewBox="0 0 900 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>blocks</title>
+    <desc>Created with Sketch.</desc>
+    <g id="blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#E03333" x="200" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#E03333" x="850" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#E03333" x="600" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#E5703D" x="0" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#E5703D" x="500" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#E5703D" x="550" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="750" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#2ABFD3" x="100" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#2ABFD3" x="800" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#2ABFD3" x="250" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#D8C75B" x="50" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#D8C75B" x="700" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#D8C75B" x="450" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#3F5BEA" x="400" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#3F5BEA" x="150" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#3F5BEA" x="650" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#000000" x="300" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle" fill="#3F5BEA" x="350" y="0" width="50" height="50"></rect>
+    </g>
+</svg>

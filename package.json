@@ -1,0 +1,22 @@
+{
+  "name": "cats-in-residence",
+  "version": "1.0.0",
+  "description": "npm install @11ty/eleventy",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve",
+    "production": "NODE_ENV=production eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "clean-css": "^4.2.4",
+    "html-minifier": "^4.0.0",
+    "luxon": "^1.28.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1",
+    "slugify": "^1.6.4"
+  }
+}

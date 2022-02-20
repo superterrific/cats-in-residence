@@ -1,0 +1,61 @@
+.exhibition-info {
+  --flow-space: 2.5rem;
+}
+
+.exhibition-info h2 + p,
+.exhibition-info h2 + ul {
+  margin-top: .25rem;
+}
+
+.exhibition-meta {
+  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+}
+
+.count {
+  font-size: 1.4rem;
+  font-family: "American Typewriter", Georgia;
+}
+.section-exhibition-images {
+  padding: .5rem .5rem 0;
+}
+
+.wrapper-exhibition-images {
+  max-width: 76rem;
+  margin: 1rem auto;
+  color: var(--color-gray-light);
+  --exhibition-image-width: 26rem;
+}
+
+.grid-exhibition-images {
+  --photo-credit-text: .84rem;
+  --photo-credit-padding: .5rem 0 0 0;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.exhibition-image {
+ margin: 0 auto 2rem;
+ padding: 1rem 1rem .5rem;
+ background: var(--color-carpet-purple-mid);
+}
+
+@supports (display: grid) {
+  .grid-exhibition-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--exhibition-image-width), 1fr));
+    gap: 1.5rem;
+    max-width: unset;
+    margin: unset;
+  }
+
+  .grid-exhibition-images figure {
+    margin-bottom: unset;
+  }
+
+  @media screen and (max-width: 400px) {
+    .grid-exhibition-images {
+      --exhibition-image-width: 16rem;
+    }
+  }
+}

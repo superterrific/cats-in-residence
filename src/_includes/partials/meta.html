@@ -1,0 +1,49 @@
+{%- set pageTitle = title + ' - ' + site.name -%}
+{%- set siteDescription = site.siteDescription -%}
+
+{# No title duplication #}
+{%- if site.name === title -%}
+{%- set pageTitle = site.homepageTitle -%}
+{%- endif -%}
+
+{# Or just set the homepage title #}
+{%- if page.url === "/" -%}
+{%- set pageTitle = site.name -%}
+{%- endif -%}
+
+{%- if '/tag/' in page.url -%}
+{% set pageTitle = 'Tagged "'+ tag + '"' + ' - ' + site.name %}
+{%- endif -%}
+
+{%- set siteTitle = site.name -%}
+{%- set siteDescription = summary -%}
+{%- set currentUrl = site.url + page.url -%}
+{%- set socialImage = site.url + site.socialImage -%}
+
+{# Use page specific title or description using keys metaTitle and/or metaDesc #}
+{%- if metaTitle -%}
+{%- set pageTitle = metaTitle -%}
+{%- endif -%}
+
+{%- if not metaDesc -%}
+{%- set metaDesc = summary -%}
+{%- endif -%}
+
+<title>{{ pageTitle }}</title>
+<link rel="canonical" href="{{ currentUrl }}" />
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+<meta property="og:image" content="{{ socialImage }}" />
+<meta property="og:image:alt" content="Decorative image for {{ site.name }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="{{ socialImage }}" />
+<meta name="twitter:image:alt" content="Decorative image for {{ site.name }}" />
+{%- if siteDescription -%}
+<meta name="description" content="{{ siteDescription }}" />
+<meta name="twitter:description" content="{{ siteDescription }}" />
+<meta property="og:description" content="{{ siteDescription }}" />
+{%- endif -%}
+<link rel="icon" href="/img/favicon.png" type="image/png" />
+<script defer data-domain="cats-in-residence.org" src="https://plausible.io/js/plausible.outbound-links.js"></script>

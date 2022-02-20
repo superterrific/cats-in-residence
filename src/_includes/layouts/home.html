@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/tokens.css" %}
+  {% include "css/global.css" %}
+  {% include "css/home.css" %}
+  {% include "css/card.css" %}
+
+{% endset %}
+
+{% set pageHeaderTitle = pageTitle %}
+
+    {% block content %}
+      <div class="wrapper">
+        <article class="meow-card">
+          <div class="meow-image">
+            <picture>
+              <source srcset="/img/meow-ethan-swann.avif" type="image/avif">
+              <source srcset="/img/meow-ethan-swann.webp" type="image/webp">
+              <img src="/img/meow-ethan-swann.jpg" width="1000" height="667" alt="An adoptable cat sits in the Cat Aviary at 356 S. Mission Road in Los Angeles">
+            </picture>
+            <p class="photo-credit">Photo<span class="visually-hidden"> credit</span>: Ethan Swann, 356 S. Mission Road</p>
+          </div>
+          <div class="wrapper-content flow meow-text">
+            <h1>{{ pageHeaderTitle }}</h1>
+            <p class="meow-subtitle">{{ subtitle }}</p>
+            {{ content | safe }}
+            <a href="/about/" class="meow-button">Learn more about the project</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="wrapper wrapper-exhibitions">
+        <article>
+          <h2>Exhibitions</h2>
+          <p class="exhibitions-text">{{ exhibitionText }}</p>
+        </article>
+
+        <div class="grid-exhibitions">
+          {% include "partials/card-exhibition.html" %}
+        </div>
+      </div>
+    {% endblock %}

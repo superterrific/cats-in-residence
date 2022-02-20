@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/tokens.css" %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+{% endset %}
+
+{% block content %}
+  <div class="wrapper wrapper-content flow reading">
+    <h1>{{ title }}</h1>
+
+    <article>
+      <div>
+        <h2>White Columns</h2>
+        <span class="exhibit-info"><a href="/exhibitions/white-columns/">Exhibition Info</a></span>
+      </div>
+      <ul>
+        {% for item in press.whiteColumns %}
+        <li>
+          {{ item.source }}: <a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+
+    <hr>
+
+    <article>
+      <div>
+        <h2>Real Art Ways</h2>
+        <span class="exhibit-info"><a href="/exhibitions/real-art-ways/">Exhibition Info</a></span>
+      </div>
+      <ul>
+        {% for item in press.realArtWays %}
+        <li>
+          {{ item.source }}: <a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+
+    <hr>
+
+    <article>
+      <div>
+        <h2>356 S. Mission Road</h2>
+        <span class="exhibit-info"><a href="/exhibitions/356-s-mission-road/" rel="noopener">Exhibition Info</a></span>
+      </div>
+      <ul>
+        {% for item in press.missionRoad %}
+        <li>
+          {{ item.source }}: <a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+
+    <hr>
+
+    <article>
+      <div>
+        <h2>Worcester Art Museum</h2>
+        <span class="exhibit-info"><a href="/exhibitions/worcester-art-museum/">Exhibition Info</a></span>
+      </div>
+      <ul>
+        {% for item in press.wam %}
+        <li>
+          {{ item.source }}: <a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+{% endblock %}

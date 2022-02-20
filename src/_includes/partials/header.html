@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="splitter">
+    <div class="flow">
+      <div class="title-section">
+        <p class="site-title">
+          {{ site.name }}
+        </p>
+        <p>{{ site.siteDescription }}</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul role="list">
+          <li id="nav-home"><a href="/">Home</a></li>
+         {% for item in navigation.items %}
+         <li id="{{ item.id }}"><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+         {% endfor %}
+         </ul>
+      </nav>
+    </div>
+    <div>
+      <div class="tube">
+        75 Total Adoptions!
+      </div>
+    </div>
+  </div>
+</div>

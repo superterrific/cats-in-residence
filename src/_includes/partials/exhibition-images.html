@@ -1,0 +1,16 @@
+      <div class="full-bleed section-exhibition-images">
+        <div class="wrapper-exhibition-images">
+          <div class="grid-exhibition-images">
+            {% for item in images %}
+              <div class="exhibition-image">
+                <picture>
+                  <source srcset="/img/{{ item.image }}.avif" type="image/avif">
+                  <source srcset="/img/{{ item.image }}.webp" type="image/webp">
+                  <img src="/img/{{ item.image }}.jpg" width="700" height="450" alt="{{ item.alt }}" loading="lazy">
+                </picture>
+                <div class="photo-credit">Photo<span class="visually-hidden"> credit</span>: {{ item.credit }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>

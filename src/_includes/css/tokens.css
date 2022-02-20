@@ -1,0 +1,77 @@
+:root {
+  --color-lightest: #fff;
+  --color-darkest: #000;
+  --color-tube-green: #73cb56;
+  --color-tube-green-dark: #3a7625;
+  --color-carpet-purple: #8c47a3;
+  --color-carpet-purple-mid: #6E3880;
+  --color-carpet-purple-dark: #301035;
+  --color-carpet-purple-lightest: #f0e4f3;
+  --color-scratcher-blue-dark: #08243e;
+  --color-scratcher-blue: #7ab5ed;
+  --color-scratcher-blue-light: #b6d6f5;
+  --color-carpet-purple-light: #c863eb;
+  --color-yellow: #ff0;
+  --color-plexi-red: #bc2631;
+  --color-plexi-red-dark: #76181e;
+  --color-gray-dark: #212121;
+  --color-gray-light: #f5f5f5;
+
+/* Light mode --------------------------------- */
+  --site-bg: var(--color-scratcher-blue-light);
+  --site-text: var(--color-gray-dark);
+  --link-color: var(--color-plexi-red-dark);
+  --link-hover-text: var(--color-carpet-purple-lightest);
+  --link-hover-bg: var(--color-carpet-purple);
+  --link-focus: var(--color-scratcher-blue-dark);
+  --header-bg: var(--color-tube-green);
+  --header-text: var(--color-darkest);
+  --skip-bg: var(--color-carpet-purple-mid);
+  --skip-text: var(--color-carpet-purple-lightest);
+  --skip-focus: var(--color-yellow);
+  --input-bg: var(--color-gray-light);
+  --input-text: var(--color-carpet-purple-dark);
+  --button-bg: var(--color-carpet-purple-dark);
+  --form-border: var(--color-carpet-purple-dark);
+  --hr: var(--color-carpet-purple);
+  --card-bg: var(--color-carpet-purple);
+  --card-border: var(--color-carpet-purple-dark);
+  --card-text: var(--color-lightest);
+  --card-border-hover: var(--color-scratcher-blue-dark);
+  --card-bg-hover: var(--color-tube-green-dark);
+  --card-border-focus: var(--color-carpet-purple);
+  --card-bg-focus: var(--color-plexi-red);
+  --meow-img-border: var(--color-carpet-purple-mid);
+  --meow-bg: var(--color-tube-green);
+  --meow-text: var(--color-scratcher-blue-dark);
+  --meow-button-bg: var(--color-tube-green-dark);
+  --meow-button-text: var(--color-lightest);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --site-bg: var(--color-carpet-purple-dark);
+    --site-text: var(--color-carpet-purple-lightest);
+    --link-color: var(--color-scratcher-blue);
+    --link-hover-text: var(--color-yellow);
+    --link-hover-bg: var(--color-carpet-purple);
+    --link-focus: var(--color-yellow);
+    --input-bg: var(--color-gray-dark);
+    --input-text: var(--color-gray-light);
+    --button-bg: var(--color-tube-green-dark);
+    --form-border: var(--color-carpet-purple);
+    --hr: var(--color-carpet-purple);
+    --card-bg: var(--color-gray-dark);
+    --card-border: var(--color-carpet-purple);
+    --card-text: inherit;
+    --card-border-hover: var(--color-tube-green);
+    --card-bg-hover: var(--color-tube-green-dark);
+    --card-border-focus: var(--color-yellow);
+    --card-bg-focus: var(--color-carpet-purple);
+    --meow-img-border: var(--color-carpet-purple);
+    --meow-bg: var(--color-tube-green-dark);
+    --meow-text: var(--color-lightest);
+    --meow-button-bg: var(--color-tube-green);
+    --meow-button-text: var(--color-scratcher-blue-dark);
+  }
+}

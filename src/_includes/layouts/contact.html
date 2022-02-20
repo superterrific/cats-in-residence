@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/tokens.css" %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+  {% include "css/contact.css" %}
+{% endset %}
+
+{% block content %}
+  <article class="wrapper wrapper-content flow reading">
+    <h1>{{ title }}</h1>
+    {% if page.url === '/contact/' %}
+    <form name="Contact CIR" method="post" data-netlify="true" action="/thank-you/" class="flow">
+
+      <div class="field-wrap">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" pattern="[A-Za-z ]{1,100}" autocomplete="on" required />
+      </div>
+
+      <div class="field-wrap">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" autocapitalize="none" pattern="[^@]+@[^\.]+\..+" autocomplete="on" required />
+      </div>
+
+      <div class="field-wrap">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="8" required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+
+    {% else %}
+
+    {{ content | safe }}
+
+    {% endif %}
+  </article>
+{% endblock %}

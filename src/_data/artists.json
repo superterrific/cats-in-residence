@@ -1,0 +1,142 @@
+{
+  "items": [
+    {
+      "name": "Ann Leese",
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Cary Liebowitz",
+      "realArtWays": true,
+      "missionRoad": true
+    },
+    {
+      "name": "Dane Johnson",
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Lucky deBellevue",
+      "url": "http://www.luckydebellevue.com/",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Jane Rosenblum",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Jason Rosenberg",
+      "url": "http://www.jason-rosenberg.net/",
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Joe Scanlon",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Jonathan Horowitz",
+      "url": "http://www.gavinbrown.biz/artists/jonathan_horowitz/works",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Kay Rosen",
+      "url": "http://www.kayrosen.com/",
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Lena Wolek",
+      "url": "http://www.lenawolek.com/",
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Lisa Anne Auerbach",
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Max Krivitzky",
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Music for Cats by special guest David Teie",
+      "url": "http://musicforcats.com/",
+      "wam": true
+    },
+    {
+      "name": "Paul McMahon",
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Perkins + Will",
+      "url": "https://perkinswill.com/",
+      "wam": true
+    },
+    {
+      "name": "Rachel Mason",
+      "wam": true
+    },
+    {
+      "name": "Rob Pruitt",
+      "url": "http://www.gavinbrown.biz/artists/rob_pruitt/works",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Rochelle Feinstein",
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Ruth Root",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Ryan McNamara",
+      "whiteColumns": true,
+      "realArtWays": true
+    },
+    {
+      "name": "Sam Roeck",
+      "url": "http://samroeck.com/",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    },
+    {
+      "name": "Theo Rosenblum & Chelsea Seltzer",
+      "url": "https://theoandchelsea.com/",
+      "whiteColumns": true,
+      "realArtWays": true,
+      "missionRoad": true,
+      "wam": true
+    }
+
+  ]
+}

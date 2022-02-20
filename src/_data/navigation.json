@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "text": "About",
+      "url": "/about/",
+      "id": "nav-about"
+    },
+    {
+      "text": "Exhibitions",
+      "url": "/exhibitions/",
+      "id": "nav-exhibitions"
+    },
+    {
+      "text": "Photos",
+      "url": "/photos/",
+      "id": "nav-photos"
+    },
+    {
+      "text": "Press",
+      "url": "/press/",
+      "id": "nav-press"
+    },
+    {
+      "text": "Zine",
+      "url": "/zine/",
+      "id": "nav-zine"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "venue": "White Columns",
+      "location": "New York, NY",
+      "date": "June 2013 - July 2013",
+      "img": "WC-hp-white-columns",
+      "alt": "Installation of The Cats-in-Residence Program at White Columns",
+      "credit": "White Columns",
+      "adoptions": "25"
+    },
+    {
+      "venue": "Real Art Ways",
+      "location": "Hartford, CT",
+      "date": "November 2014 - December 2014",
+      "img": "RA-hp-real-artways-facebook",
+      "alt": "Installation of The Cats-in-Residence Program at Real Artways",
+      "credit": "Real Artways Facebook",
+      "adoptions": "18"
+    },
+    {
+      "venue": "356 S. Mission Road",
+      "location": "Los Angeles, CA",
+      "date": "December 2014 - January 2015",
+      "img": "356-hp-ethan-swann",
+      "alt": "Installation of The Cats-in-Residence Program at 356 S. Mission Road",
+      "credit": "Ethan Swann",
+      "adoptions": "12"
+    },
+    {
+      "venue": "Worcester Art Museum",
+      "location": "Worcester, MA",
+      "date": "July 2016 - September 2016",
+      "img": "WAM-hp-warl",
+      "alt": "Installation of The Cats-in-Residence Program at Worcester Art Museum",
+      "credit": "Worcester Animal Rescue League",
+      "adoptions": "20"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+}
+
+input,
+textarea,
+select {
+  background: var(--input-bg);
+  color: var(--input-text);
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.field-wrap > input, textarea {
+  width: 100%;
+  border: 2px solid var(--form-border);
+  padding: .5rem;
+}
+
+.field-wrap > input:focus, textarea:focus {
+  outline: 3px solid var(--form-border);
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background: var(--button-bg);
+  border: 1px solid var(--form-border);
+  color: var(--color-lightest);
+  padding: .25rem 1.25rem;
+}
+
+button:hover {
+  background: var(--color-secondary);
+  color: var(--color-secondary-dark);
+  cursor: pointer;
+}
+
+button:focus {
+  background: var(--color-secondary);
+  color: var(--color-secondary-dark);
+  outline: 3px solid var(--color-secondary-dark);
+}
+
+button:disabled,
+input:disabled,
+textarea:disabled  {
+  background-color: var(--color-disabled);
+  color: var(--color-secondary-dark);
+}

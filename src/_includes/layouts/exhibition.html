@@ -1,0 +1,82 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/tokens.css" %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+  {% include "css/exhibitions.css" %}
+{% endset %}
+
+{% set pageHeaderTitle = title %}
+{% set previousPost = collections.exhibitions | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.exhibitions | getNextCollectionItem(page) %}
+
+{% block content %}
+  <article class="wrapper wrapper-content flow">
+
+    <div>
+      <h1>{{ title | safe }}</h1>
+      <div class="exhibition-meta">
+        <p>
+          {{ location | safe }}
+        </p>
+        <p>
+          <time datetime="{{ startDate | w3Date }}">{{ startDate | longDate }}</time> - <time datetime="{{ endDate | w3Date }}">{{ endDate | longDate }}</time>
+        </p>
+        {% if show %}
+        <p>
+          Part of <a href="{{ show.url }}">{{ show.name }}</a>{% if show.included %} and included <a href="{{ show.includedUrl }}" rel="noopener">{{ show.included }}</a>{% endif %}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+    <p>
+      <a href="{{ link }}">Exhibition page at Venue</a>
+    </p>
+    <p class="count">
+      <span class="exhibition-count">{{ adoptionCount }}</span> adoptions at this event
+    </p>
+
+    {% include "partials/exhibition-images.html" %}
+
+    <div class="flow exhibition-info">
+      <h2>Concept</h2>
+      <p>
+        Rhonda Lieberman
+      </p>
+
+      <h2>CatAviary / Enclosure</h2>
+      <p>
+        <a href="http://www.frcll.com/cataviary-and-tubes-over-tubes" rel="noopener">Freecell</a> (John Hartmann/Lauren Crahan) and <a href="http://www.giawolff.com/" rel="noopener">Gia Wolff</a>
+      </p>
+
+      {{ content | safe }}
+    </div>
+  </article>
+
+  {% if nextPost or previousPost %}
+    <nav class="splitter"  aria-label="Pagination">
+      <p class="post-nav-item">
+        {% if previousPost %}
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-pagination pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" aria-hidden="true" focusable="false" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z"/>
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <line x1="5" y1="12" x2="9" y2="16" />
+          <line x1="5" y1="12" x2="9" y2="8" />
+        </svg>
+      <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+        {% endif %}
+      </p>
+      <p class="post-nav-item">
+        {% if nextPost %}
+        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-pagination pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path stroke="none" d="M0 0h24v24H0z"/>
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <line x1="15" y1="16" x2="19" y2="12" />
+          <line x1="15" y1="8" x2="19" y2="12" />
+        </p>
+      {% endif %}
+    </nav>
+    {% endif %}
+{% endblock %}
