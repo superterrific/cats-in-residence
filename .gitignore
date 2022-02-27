@@ -10,4 +10,4 @@ Thumbs.db
 # Node modules and output
 node_modules
 public
-src/ignore
+ignore
