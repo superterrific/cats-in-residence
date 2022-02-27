@@ -14,11 +14,20 @@
       <div class="wrapper">
         <article class="meow-card">
           <div class="meow-image">
-            <picture>
-              <source srcset="/img/meow-ethan-swann.avif" type="image/avif">
-              <source srcset="/img/meow-ethan-swann.webp" type="image/webp">
-              <img src="/img/meow-ethan-swann.jpg" width="1000" height="667" alt="An adoptable cat sits in the Cat Aviary at 356 S. Mission Road in Los Angeles">
-            </picture>
+            <img
+                src="https://res.cloudinary.com/dtw5nh0mw/image/fetch/w_640,f_auto,q_auto:eco/https://cats-in-residence.org/img/meow-ethan-swann.jpg"
+                srcset="
+                    https://res.cloudinary.com/dtw5nh0mw/image/fetch/w_320,f_auto,q_auto:eco/https://cats-in-residence.org/img/meow-ethan-swann.jpg 320w,
+                    https://res.cloudinary.com/dtw5nh0mw/image/fetch/w_640,f_auto,q_auto:eco/https://cats-in-residence.org/img/meow-ethan-swann.jpg 640w,
+                    https://res.cloudinary.com/dtw5nh0mw/image/fetch/w_960,f_auto,q_auto:eco/https://cats-in-residence.org/img/meow-ethan-swann.jpg 960w"
+                sizes="
+                    (min-width: 1023px) 960px,
+                    (min-width: 675px) 640px,
+                    (min-width: 380px) 320px,
+                    100vw"
+                width="850"
+                height="567"
+                alt="An adoptable cat sits in the Cat Aviary at 356 S. Mission Road in Los Angeles">
             <p class="photo-credit">Photo<span class="visually-hidden"> credit</span>: Ethan Swann, 356 S. Mission Road</p>
           </div>
           <div class="wrapper-content flow meow-text">
