@@ -171,7 +171,6 @@ header a:focus {
   text-decoration: underline;
   text-decoration-thickness: .25rem;
   outline: unset;
-
 }
 
 .tube {
@@ -280,8 +279,8 @@ footer a {
 footer a:focus {
   text-decoration: underline;
   text-decoration-thickness: .25rem;
-  outline: unset;
   text-decoration-color: var(--color-yellow);
+  outline: unset;
 }
 
 .footer-nav {
