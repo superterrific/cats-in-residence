@@ -134,20 +134,24 @@ header {
   background: var(--header-bg);
   color: var(--header-text);
   padding: 2rem .5rem;
-  padding: clamp(.5rem, 2.5vw, 2rem) .5rem;
+  padding: clamp(1rem, 2.5vw, 2rem) .5rem;
   border-bottom: 1px solid var(--color-carpet-purple-dark);
 }
 
 .site-title {
-  align-self: center;
   font-size: 2.1rem;
-  font-size: clamp(1.7rem, 2.5vw, 2.1rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
   font-family: 'American Typewriter', Georgia, Serif;
   font-weight: 700;
+  line-height: 1.1;
 }
 
-.title-section p {
-  line-height: 1.15;
+.title-section p:last-child {
+  font-size: .9rem;
+  font-size: clamp(.9rem, 2.5vw, 1rem);
+  line-height: 1.1rem;
+  margin-block-start: .25rem;
+  margin-block-start: clamp(.25rem * 2, 2.5vw, .25rem);
 }
 
 header a {
@@ -164,8 +168,10 @@ header a:hover {
 }
 
 header a:focus {
-  outline: 2px solid var(--color-scratcher-blue-dark);
-  outline-offset: .2rem;
+  text-decoration: underline;
+  text-decoration-thickness: .25rem;
+  outline: unset;
+
 }
 
 .tube {
@@ -178,6 +184,7 @@ header a:focus {
   margin-right: -2rem;
   margin-top: -2.5rem;
   font-family: 'American Typewriter', Georgia, Serif;
+  letter-spacing: .025em;
 }
 
 @media screen and (max-width: 900px) {
@@ -271,7 +278,10 @@ footer a {
 }
 
 footer a:focus {
-  --link-focus: var(--color-yellow);
+  text-decoration: underline;
+  text-decoration-thickness: .25rem;
+  outline: unset;
+  text-decoration-color: var(--color-yellow);
 }
 
 .footer-nav {
