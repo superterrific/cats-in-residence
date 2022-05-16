@@ -33,6 +33,7 @@
   --input-text: var(--color-carpet-purple-dark);
   --button-bg: var(--color-carpet-purple-dark);
   --form-border: var(--color-carpet-purple-dark);
+  --form-border-focus: var(--color-carpet-purple);
   --hr: var(--color-carpet-purple);
   --card-bg: var(--color-carpet-purple);
   --card-border: var(--color-carpet-purple-dark);
@@ -60,6 +61,7 @@
     --input-text: var(--color-gray-light);
     --button-bg: var(--color-tube-green-dark);
     --form-border: var(--color-carpet-purple);
+    --form-border-focus: var(--color-yellow);
     --hr: var(--color-carpet-purple);
     --card-bg: var(--color-gray-dark);
     --card-border: var(--color-carpet-purple);

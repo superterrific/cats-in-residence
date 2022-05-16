@@ -23,7 +23,7 @@ label {
 }
 
 .field-wrap > input:focus, textarea:focus {
-  outline: 3px solid var(--form-border);
+  outline: 3px solid var(--form-border-focus);
 }
 
 textarea {
@@ -44,9 +44,9 @@ button:hover {
 }
 
 button:focus {
-  background: var(--color-secondary);
-  color: var(--color-secondary-dark);
-  outline: 3px solid var(--color-secondary-dark);
+  background: var(--color-yellow);
+  color: var(--color-darkest);
+  outline: 3px solid var(--color-darkest);
 }
 
 button:disabled,
