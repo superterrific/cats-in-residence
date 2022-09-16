@@ -99,10 +99,9 @@ a:hover {
   text-decoration: none;
 }
 
-a:focus {
+a:focus-visible {
   outline: 2px solid var(--link-focus);
   outline-offset: .2rem;
-  overflow: auto;
 }
 
 h1,
@@ -168,7 +167,7 @@ header a:hover {
   background: var(--color-scratcher-blue-dark);
 }
 
-header a:focus {
+header a:focus-visible {
   outline: 2px solid var(--color-scratcher-blue-dark);
   outline-offset: .2rem;
   overflow: auto;
@@ -277,7 +276,7 @@ footer a {
   color: var(--color-carpet-purple-light);
 }
 
-footer a:focus {
+footer a:focus-visible {
   outline: 2px solid var(--color-yellow);
   outline-offset: .2rem;
   overflow: auto;
