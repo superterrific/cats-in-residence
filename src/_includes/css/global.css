@@ -282,6 +282,10 @@ footer a:focus-visible {
   overflow: auto;
 }
 
+.footer-icons li a:focus {
+  outline: 2px solid transparent;
+}
+
 .footer-nav {
   font-size: 1.2rem;
   font-size: clamp(1.2rem, 2.5vw, 1.3rem);

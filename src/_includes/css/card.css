@@ -39,9 +39,11 @@
 .card:hover {
   border-color: var(--card-border-hover);
   background: var(--card-bg-hover);
+  outline: 5px solid transparent;
 }
 
 .card:focus-within {
   border-color: var(--card-border-focus);
   background: var(--card-bg-focus);
+  outline: 5px solid transparent;
 }
