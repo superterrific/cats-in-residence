@@ -55,7 +55,11 @@
 
   @media screen and (max-width: 400px) {
     .grid-exhibition-images {
-      --exhibition-image-width: 16rem;
+      --exhibition-image-width: 11rem;
+    }
+
+    .exhibition-image {
+      padding: .5rem;
     }
   }
 }

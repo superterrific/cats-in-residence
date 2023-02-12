@@ -87,7 +87,7 @@
 @supports (display: grid) {
   .grid-exhibitions {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--exhibition-image-width, 20rem), 1fr));
     gap: 2rem;
     margin: 2rem auto;
     max-width: unset;
@@ -95,6 +95,12 @@
 
   .grid-exhibitions > * + * {
     margin-top: unset;
+  }
+
+  @media screen and (max-width: 400px) {
+    .grid-exhibitions {
+      --exhibition-image-width: 11rem;
+    }
   }
 }
 

@@ -10,7 +10,8 @@ The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standar
 This site has been built using [W3C standards](https://www.w3.org/standards/) for HTML and CSS. Any person using a past, present, or future browser that honors these standards should be capable of navigating this site. For example, you should be able to:
 
 * Navigate using keyboard only.
-* Zoom up to 400% without having to scroll horizontally to view any content.
+* Zoom up to 400% on non-mobile screens without having to scroll horizontally to view any content.
+* Zoom up to 200% on tablet screens and larger without having to scroll horizontally to view any content.
 * Navigate most of this site using speech recognition software.
 * Navigate most of this site using a screen reader.
 * Navigate all of this site if CSS fails to load.
@@ -19,6 +20,10 @@ This site has been built using [W3C standards](https://www.w3.org/standards/) fo
 In addition to being tested on modern browsers, this site has been checked for screen reader ease of use using VoiceOver with Safari in MacOS. It has also been audited using [WAVE](https://wave.webaim.org/) and [Arc Toolkit](https://www.tpgi.com/arc-platform/arc-toolkit/) as well as checked manually.
 
 ## Known Issues
-If you are Firefox user using a Zoom level above 100% and have the "Zoom text only" option enabled, the top-level navigation may be obscured by the "75 Total Adoptions" text. If this is the case, you can either reduce your zoom level until you can use the navigation, or scroll to the bottom of the page and use the navigation in the footer. We apologize for any inconvenience.
+If you are Firefox user using a Zoom level above 100% and have the "Zoom text only" option enabled, the top-level navigation may be obscured by the "75 Total Adoptions" text. If this is the case, you can either reduce your zoom level until you can use the navigation, or scroll to the bottom of the page and use the navigation in the footer. 
+
+On mobile devices zooming above 200% may require some horizontal scrolling to see the full content. Specifically the site title, page headers and some of the exhibition images on the homepage and exhibition pages. We apologize for any inconvenience.
 
 Issues with this site's accessibility can be submitted as a [GitHub issue](https://github.com/superterrific/cats-in-residence/issues) or you can [contact us directly](/contact/). We take these issues very seriously and will try to address them as quickly as possible.
+
+Last updated: February 11, 2023.
