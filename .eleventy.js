@@ -53,12 +53,6 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/exhibitions/*.md')];
   });
 
-  // Open the browser on launch
-  config.setBrowserSyncConfig({
-    open: true,
-    ghostMode: false
-  });
-
   // Markdown options
   const markdownOptions = {
     html: true,
